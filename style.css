@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+
+.header {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#container {
+    /* Total space constraint as requested */
+    width: 960px;
+    height: 960px;
+    
+    /* Flexbox settings */
+    display: flex;
+    flex-wrap: wrap; 
+    
+    /* Visual styles for the board */
+    background-color: white;
+    border: 10px solid #333;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* We don't set width/height for squares here because
+   that is calculated dynamically in JavaScript */
+.grid-square {
+    box-sizing: border-box; /* Ensures borders don't break sizing */
+    border: 1px solid #eee; /* Optional: light border to see the grid */
+}
